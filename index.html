@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website - Home Page </title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <div class="logo">
+            <h1>beatz</h1>
+            <img src="images/logo.png" alt="headphone logo">
+        </div>
+        <nav class="navbar">
+            <a class="active" href="index.html">home</a>
+            <a href="brand.html">accessories</a>
+            <a href="contact.html">contact</a>
+            <a href="signin.html">my account</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search products, brands...">
+            <label for="search-box" class="fas fa-search"></label> 
+        </div>
+        <div class="cart-wrapper">
+            <h2 class="title">your cart</h2>
+            <div class="cart-row">
+            </div>
+            <div class="total">
+                <h3 class="total-title">total:</h3>
+                <p class="total-price">$0</p>
+            </div>
+            <button class="purchase-btn">purchase</button>
+            <i class="fas fa-times" id="close-btn"></i>
+        </div>
+    </section>
+
+    <section class="home">
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h3>its all about the <br><span>beatz</span></h3>
+                    <p>Experience the feeling with different kinds of headphones and earphones</p>
+                    <a href="#" class="home-btn">shop now</a>
+                </div>
+                <div class="image">
+                    <img src="images/home-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>fine quality</h3>
+                    <span>good product</span>
+                    <p>Experience the feeling with different kinds of headphones and earphones</p>
+                    <a href="#" class="home-btn">shop now</a>
+                </div>
+                <div class="image">
+                    <img src="images/home-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="fas fa-chevron-left" id="prev-btn" onclick="prev()"></div>
+        <div class="fas fa-chevron-right" id="next-btn" onclick="next()"></div>
+    </section>
+
+    <section class="brand">
+        <div class="brand-container">
+            <div class="box">
+                <img src="images/brand-1.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/brand-2.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/brand-3.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/brand-4.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/brand-5.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/brand-6.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/brand-7.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/brand-8.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="title">
+            <h3>featured products</h3>
+            <a href="brand.html"> &#8594</a>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/product-1-1.png" alt="" class="box-img">
+                <p class="box-title">beats by dre headphone</p>
+                <div class="price-content">
+                    <div class="price">$3.00</div>
+                    <span>$6.59</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="images/product-2-1.png" alt="" class="box-img">
+                <p class="box-title">samsung earpods</p>
+                <div class="price-content">
+                    <div class="price">$4.00</div>
+                    <span>$8.59</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="images/product-10-1.png" alt="" class="box-img">
+                <p class="box-title">apple earpiece</p>
+                <div class="price-content">
+                    <div class="price">$2.00</div>
+                    <span>$8.00</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="images/product-7-1.png" alt="" class="box-img">
+                <p class="box-title">quality headphones</p>
+                <div class="price-content">
+                    <div class="price">$4.00</div>
+                    <span>$8.59</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="images/product-9-1.png" alt="" class="box-img">
+                <p class="box-title">mi earphones</p>
+                <div class="price-content">
+                    <div class="price">$3.00</div>
+                    <span>$6.59</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="images/product-12-1.png" alt="" class="box-img">
+                <p class="box-title">auckey earpods</p>
+                <div class="price-content">
+                    <div class="price">$4.00</div>
+                    <span>$8.59</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="images/product-6-1.png" alt="" class="box-img">
+                <p class="box-title">sony headphones</p>
+                <div class="price-content">
+                    <div class="price">$3.00</div>
+                    <span>$6.59</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="images/product-13-1.png" alt="" class="box-img">
+                <p class="box-title">apple earphones</p>
+                <div class="price-content">
+                    <div class="price">$2.00</div>
+                    <span>$8.00</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <h3>don't miss out on these</h3>
+        <div class="box-container">
+           <a href="" class="box">
+               <img src="images/blog-1.jpg" alt="">
+               <div class="content">
+                   <h4>flash sales</h4>
+                    <p>Get one product and get it at a discount of 30%</p>
+               </div>
+           </a>
+           <a href="" class="box">
+                <img src="images/blog-2.jpg" alt="">
+                <div class="content">
+                    <h4>oriamo earpiece</h4>
+                    <p>50% Discount</p>
+                </div>
+            </a>
+            <a href="" class="box">
+                <img src="images/blog-3.jpg" alt="">
+                <div class="content">
+                    <h4>spend less <br>save more</h4>
+                    <p>with Beatz coupon</p>
+                </div>
+            </a>
+            <a href="" class="box">
+                <img src="images/blog-4.jpg" alt="">
+                <div class="content">
+                    <h4>quality earpods</h4>
+                    <p>50% Discount</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h3>what we offer</h3>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/service-1.png" class="image" alt="">
+                <h4>help support</h4>
+                <p>24 hours a day</p>
+            </div>
+            <div class="box">
+                <img src="images/service-2.png" class="image" alt="">
+                <h4>fast delivery</h4>
+                <p>24/7 services</p>
+            </div>
+            <div class="box">
+                <img src="images/service-3.png" class="image" alt="">
+                <h4>quick payment</h4>
+                <p>100% secure</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <div class="content">beatz</div>
+                <p>bode thomas road, <br>surulere, lagos</p>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">home</a>
+                <a href="brand.html">accessories</a>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="box">
+                <h3>support</h3>
+                <p>return policy</p>
+                <p>privacy</p>
+                <p>shipping details</p>
+            </div>
+            <div class="box">
+                <h3>download beatz app</h3>
+                <div class="main">
+                    <img src="images/google-play.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content-1">
+            <div class="socials">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
+            <div class="payment">
+                <img src="images/maestro.png" alt="">
+                <img src="images/visa.png" alt="">
+                <img src="images/paypal.png" alt="">
+            </div>
+        </div>
+        <div class="credits">Created and designed by <span>ikediashi anita ifeoma</span> | all rights reserved</div>
+    </section>
+    
+
+    <script src="js/home.js"></script>
+</body>
+</html>
