@@ -612,5 +612,8 @@ section {
     html {
         font-size: 50%;
     }
+    #prev-btn, #next-btn {
+        top: 60%;
+    }
 }
     
